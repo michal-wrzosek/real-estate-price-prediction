@@ -1,0 +1,18 @@
+{
+  "name": "real-estate-price-prediction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "docker build -t custom-jupyter-notebook .",
+    "start": "docker run -p 8888:8888 -v \"$PWD\"/jupyter-notebook:/home/jovyan/work custom-jupyter-notebook"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fast-csv": "^2.4.1",
+    "node-fetch": "^2.3.0",
+    "qs": "^6.7.0"
+  }
+}
